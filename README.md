@@ -6,10 +6,10 @@
 - Nicolò Calandra, 5648986
 
 ## Github repository
-[https://github.com/Faasol/DV-website](Website repository)
+[Website repository](https://github.com/Faasol/DV-website)
 
 ## Github pages
-[https://faasol.github.io/DV-website/](Website link)
+[Website link](https://faasol.github.io/DV-website/)
 
 ## Self-evaluation of web programming skills
 All the three of us successfully completed the SAW course during the Bachelor's degree.
