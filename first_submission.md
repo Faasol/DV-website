@@ -1,12 +1,12 @@
-# Project Proposal: How AI Is Reshaping the Way Students Learn
+# How is generative AI affecting students' learning, reasoning, and critical-thinking skills?
 
-## Group and working title
+View the project website on [GitHub Pages](https://faasol.github.io/DV-website/).
 
-**Working title:** Learning with a Co-Pilot: How AI Is Reshaping the Way Students Learn
+## Group: RUCOS
 
 **Group members:**
 
-- Nicoló Calandra
+- Nicolò Calandra
 - Marco Fasoli
 - Giulio Venturini
 
@@ -32,11 +32,15 @@ The secondary audience is school and university decision-makers who set AI polic
 
 ### Bastani et al., "Generative AI without guardrails can harm learning", PNAS 2025 (main, measured)
 
+[Data and code](https://github.com/obastani/GenAICanHarmLearning)
+
 **What it is:** Field experiment with nearly 1,000 high school maths students in Turkey, split into three arms: a ChatGPT-style chatbot (GPT Base), a hint-only tutor (GPT Tutor), and a control group with no AI. Anonymised student-level data and code are public on GitHub.
 
 **What it contributes:** The causal core of the story: scores during AI-assisted practice against scores on a later exam without AI, per arm. Against the control group, GPT Base scored 48% higher in practice and 17% lower on the exam; GPT Tutor scored 127% higher in practice and about level on the exam. The repository also holds student, class and grader covariates and the time-stamped student conversations with the tutors. (summary)
 
 ### Kestin et al., "AI tutoring outperforms in-class active learning", Scientific Reports 2025 (measured)
+
+[Study data](https://github.com/HarvardAITutor/Study-Data-v4)
 
 **What it is:** Randomised crossover trial with 194 Harvard undergraduates in introductory physics: a purpose-built AI tutor against an instructor-led active learning class. The public Stata file has 316 student-session rows and 9 variables: condition, pre-test and post-test score, engagement, enjoyment, effort and perceived difficulty ratings, and time on task.
 
@@ -44,11 +48,15 @@ The secondary audience is school and university decision-makers who set AI polic
 
 ### Pew Research Center, "How Teens Use and View AI", 2026 (survey)
 
+[Survey topline](https://www.pewresearch.org/wp-content/uploads/sites/20/2026/02/PI_2026.02.24_Teens-and-AI_TOPLINE.pdf)
+
 **What it is:** Survey of 1,458 US teens aged 13 to 17 and their parents, fieldwork 25 September to 9 October 2025. Topline results and methodology are published.
 
 **What it contributes:** Prevalence among teenagers: 64% have used AI chatbots and 54% use them for schoolwork, with a breakdown of tasks such as researching a topic (48%) and solving maths problems (43%).
 
 ### HEPI Student Generative AI Survey 2026 (survey)
+
+[Report and data tables](https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/)
 
 **What it is:** Survey of 1,054 full-time UK undergraduates, fieldwork December 2025, with weighted data tables downloadable as XLSX.
 
@@ -58,20 +66,19 @@ We limit the project to these four datasets. The two experiments carry every cla
 
 ## 4. Visualization ideas and data concerns
 
-**Storyline and plots:**
+**Storyline and proposed views:**
 
-1. "Everyone uses it." A single large number or waffle chart for the share of students using AI, for teens (Pew) and undergraduates (HEPI) in separate panels, followed by a sorted horizontal bar chart of what they use it for.
-2. "It is growing." A small line chart of AI-generated text in assessed work, 2024 to 2026 (HEPI).
-3. "With AI, scores jump." A bar chart of practice-session performance for the three arms (PNAS).
-4. "Without AI, the gain disappears." A slope chart linking each arm's practice result to its exam result, so the GPT Base line visibly drops below the control group. This is the central chart of the story.
-5. "Students do not see it." A dumbbell chart of perceived against actual learning per arm (PNAS).
-6. "Design matters." A side-by-side of GPT Base and GPT Tutor, with an annotated example of an answer-giving reply next to a hint-giving one, and the share of student messages that simply ask for the answer in each arm (PNAS conversations).
-7. "A well-designed tutor can beat the classroom." Paired pre-test and post-test distributions for the AI tutor and the active learning class, plus a small scatter of time on task against learning gain (Harvard).
-8. "What students worry about." Diverging stacked bars for agree/disagree items on benefits, skills and institutional support (HEPI).
+We plan to tell the story through five views, combining related ideas from the original proposal.
+
+1. **How students use AI.** Separate panels for AI use among teens and undergraduates, followed by bars showing what they use it for. Where survey wording is comparable, a small trend will show the use of AI-generated text in assessed work from 2024 to 2026. (Pew and HEPI)
+2. **With AI, and without it.** Compare practice results for the three groups with their later exam results without AI. This is the central view: it will show both the immediate performance gains and what happens when AI is taken away. (Bastani et al.)
+3. **Does the design of the tool matter?** Compare GPT Base and GPT Tutor, with examples of answer-giving and hint-giving replies. We also plan to explore requests for answers in their conversations and students' perceived versus measured learning, if the available variables support it. (Bastani et al.)
+4. **Learning with an AI tutor.** Show pre- and post-test distributions for the AI tutor and active learning class, alongside time on task and learning gain. This experiment offers a separate perspective on a tutor designed around teaching practice. (Kestin et al.)
+5. **What students think.** Use diverging bars to explore reported benefits, worries about skills and views on institutional support. (HEPI)
 
 **Concerns about data availability:**
 
-- Student-level data is available for both experiments. The PNAS data is on GitHub and the Harvard data is a public Stata file, so plots 3 to 7 can show distributions and breakdowns, not only published averages. We still need to explore the PNAS repository and confirm its variable definitions.
+- Student-level data is available for both experiments. The PNAS data is on GitHub and the Harvard data is a public Stata file, so the experimental views can show distributions and breakdowns, not only published averages. We still need to explore the PNAS repository and confirm its variable definitions.
 - The Harvard file is small. It has 9 variables and no demographics or prior-achievement covariates, and not every student has a row for both conditions (316 rows for 194 students). Breakdowns are limited to condition, scores, ratings and time.
 - The experiments are not directly comparable. PNAS compares AI against no AI and then tests without AI; Harvard compares an AI tutor against a strong class with a short-term post-test. They will appear in separate panels with their own scales.
 - Pew offers published tables, not respondent-level data. We have not found a public microdata file, so Pew charts will use the topline percentages.
