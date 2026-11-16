@@ -3,51 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Website setup</title>
+  <meta name="description" content="Project proposal: how AI is reshaping the way students learn.">
+  <title>How is generative AI affecting students&#39; learning, reasoning, and critical-thinking skills? | Project Proposal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Website setup</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top">Rucos <span>/ project proposal</span></a>
+      <nav aria-label="Proposal sections">
+        <a href="#questions">Questions</a>
+        <a href="#audience">Audience</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#visualizations">Visualizations</a>
+      </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>Team: Rucos</h2>
-      <ul>
-        <li>Marco Fasoli, 5611520</li>
-        <li>Giulio Venturini, 5645817</li>
-        <li>Nicolò Calandra, 5648986</li>
-      </ul>
+  <main class="container" id="top">
+    <header class="proposal-header">
+      <p class="eyebrow">Data visualization · Project proposal</p>
+      <h1>How is generative AI affecting students&#39; learning, reasoning, and critical-thinking skills?</h1>
+      <p class="members"><strong>RUCOS</strong><br>Nicolò Calandra · Marco Fasoli · Giulio Venturini</p>
+    </header>
+
+    <section id="questions">
+      <div class="section-title"><span>01</span><h2>Main question and supporting questions</h2></div>
+      <div class="section-content">
+        <p class="main-question">Does generative AI help students learn, or does it only help them finish the task in front of them?</p>
+        <h3>Supporting questions</h3>
+        <ol class="questions">
+          <li>How widespread is AI use among students today, and what do they use it for?</li>
+          <li>What happens to performance while students have AI, and what happens once it is taken away?</li>
+          <li>Does the design of the tool matter? How does a plain chatbot compare with a tutor that gives hints instead of answers?</li>
+          <li>Do students notice the effect on their own learning, or do they overestimate what they have learned?</li>
+          <li>How are students and institutions responding, from perceived benefits and worries about skill erosion to changes in assessment?</li>
+        </ol>
+      </div>
     </section>
 
-    <section>
-      <h2>GitHub repository</h2>
-      <p><a href="https://github.com/Faasol/DV-website">Website repository</a></p>
+    <section id="audience">
+      <div class="section-title"><span>02</span><h2>Intended audience</h2></div>
+      <div class="section-content">
+        <p>Our primary audience is <strong>students, teachers and parents</strong>: people who make daily decisions about AI and study, often without a technical background. We want each chart to be easy to read, with one clear message and plain-language annotations.</p>
+        <p>Our secondary audience is <strong>school and university decision-makers</strong> who set AI policies and choose which tools to provide.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>GitHub Pages</h2>
-      <p><a href="https://faasol.github.io/DV-website/">Website link</a></p>
+    <section id="datasets">
+      <div class="section-title"><span>03</span><h2>Datasets</h2></div>
+      <div class="section-content">
+        <p>We will use four datasets. The experiments are the basis for claims about learning outcomes; the surveys tell us about reported use and attitudes.</p>
+        <div class="dataset-list">
+          <article class="dataset"><div><p class="tag">Experiment · PNAS 2025</p><h3>Bastani et al.</h3><p class="dataset-name">Generative AI without guardrails can harm learning</p><a class="dataset-link" href="https://github.com/obastani/GenAICanHarmLearning">Data and code ↗</a></div><div><p>A field experiment with nearly 1,000 high school maths students in Turkey. Students were assigned to a ChatGPT-style chatbot (GPT Base), a hint-only tutor (GPT Tutor), or a control group without AI.</p><p>Compared with the control group, GPT Base scored 48% higher during practice and 17% lower on a later exam without AI. GPT Tutor scored 127% higher in practice and about the same on the exam. Anonymised student-level data, code and tutor conversations are public.</p></div></article>
+          <article class="dataset"><div><p class="tag">Experiment · Scientific Reports 2025</p><h3>Kestin et al.</h3><p class="dataset-name">AI tutoring outperforms in-class active learning</p><a class="dataset-link" href="https://github.com/HarvardAITutor/Study-Data-v4">Study data ↗</a></div><div><p>A randomised crossover trial with 194 Harvard undergraduates in introductory physics, comparing a purpose-built AI tutor with an instructor-led active learning class.</p><p>The reported median post-test score was 4.5 with the AI tutor and 3.5 in class; median time on task was 49 minutes for the tutor, compared with a fixed 60-minute class. The public data include scores, ratings and time on task.</p></div></article>
+          <article class="dataset"><div><p class="tag">Survey · 2026</p><h3>Pew Research Center</h3><p class="dataset-name">How Teens Use and View AI</p><a class="dataset-link" href="https://www.pewresearch.org/wp-content/uploads/sites/20/2026/02/PI_2026.02.24_Teens-and-AI_TOPLINE.pdf">Survey topline ↗</a></div><div><p>A survey of 1,458 US teens aged 13–17 and their parents, conducted from 25 September to 9 October 2025. It provides published results on AI use among teenagers.</p><p>In the survey, 64% of teens had used AI chatbots and 54% used them for schoolwork. Reported uses included researching a topic (48%) and solving maths problems (43%).</p></div></article>
+          <article class="dataset"><div><p class="tag">Survey · 2026</p><h3>HEPI</h3><p class="dataset-name">Student Generative AI Survey</p><a class="dataset-link" href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/">Report and data tables ↗</a></div><div><p>A survey of 1,054 full-time UK undergraduates, conducted in December 2025, with weighted data tables available to download.</p><p>It covers reported use, benefits, concerns and institutional support: 95% use AI in some way and 94% use it for assessed work. It also provides a possible trend: reported use of AI-generated text in assessed work rose from 3% in 2024 to 8% in 2025 and 12% in 2026.</p></div></article>
+        </div>
+        <p class="note"><strong>Keeping populations separate.</strong> The sources cover Turkish high school students, US undergraduates, US teens and UK undergraduates. We will present them side by side without merging them.</p>
+      </div>
     </section>
 
-    <section>
-      <h2>Self-evaluation of web programming skills</h2>
-      <p>All the three of us successfully completed the SAW course during the Bachelor's degree.</p>
-      <ul>
-        <li><strong>Marco Fasoli:</strong> I have been working on web programming since high school, creating websites by hand. Recently I have been mostly working on web programming with the assistance of LLMs.</li>
-        <li><strong>Giulio Venturini:</strong> I have had web dev experience both in high school and in university. I now mostly work with web programming with the assistance of LLMs, since it mostly involves the repetition of boiler plate code.</li>
-        <li><strong>Nicolò Calandra:</strong> I had my first experience with web programming during the SAW course and now I mainly work with the assistance of LLMs for HTML and CSS code.</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Technologies that you plan to use for web programming</h2>
-      <p>We plan to use HTML, CSS and vanilla JavaScript for the website. We will also use D3.js for the data visualization part of the project. If we find useful libraries for the project, we will also use them. We will not use any frameworks for the website, since we want to keep it simple and lightweight.</p>
-    </section>
-
-    <section>
-      <h2>Data handling and processing</h2>
-      <p>We plan to use Python for data handling and processing. We will use Pandas for data manipulation and cleaning and we will also use Jupyter notebooks for data exploration and analysis.</p>
+    <section id="visualizations">
+      <div class="section-title"><span>04</span><h2>Visualization ideas and data concerns</h2></div>
+      <div class="section-content">
+        <h3>Storyline and proposed views</h3>
+        <p>We plan to tell the story through five views, combining related ideas from the original proposal.</p>
+        <ol class="view-list">
+          <li><div><h4>How students use AI</h4><p>Separate panels for AI use among teens and undergraduates, followed by bars showing what they use it for. Where survey wording is comparable, a small trend will show the use of AI-generated text in assessed work from 2024 to 2026.</p><span>Pew · HEPI</span></div></li>
+          <li><div><h4>With AI, and without it</h4><p>Compare practice results for the three groups with their later exam results without AI. This is the central view: it will show both the immediate performance gains and what happens when AI is taken away.</p><span>Bastani et al.</span></div></li>
+          <li><div><h4>Does the design of the tool matter?</h4><p>Compare GPT Base and GPT Tutor, with examples of answer-giving and hint-giving replies. We also plan to explore requests for answers in their conversations and students’ perceived versus measured learning, if the available variables support it.</p><span>Bastani et al.</span></div></li>
+          <li><div><h4>Learning with an AI tutor</h4><p>Show pre- and post-test distributions for the AI tutor and active learning class, alongside time on task and learning gain. This experiment offers a separate perspective on a tutor designed around teaching practice.</p><span>Kestin et al.</span></div></li>
+          <li><div><h4>What students think</h4><p>Use diverging bars to explore reported benefits, worries about skills and views on institutional support.</p><span>HEPI</span></div></li>
+        </ol>
+        <h3 class="concerns-heading">Concerns about data availability</h3>
+        <ul class="concerns">
+          <li><strong>Experiment data.</strong> Student-level data is public for both experiments, but we still need to explore the PNAS repository and confirm its variable definitions.</li>
+          <li><strong>Harvard data.</strong> The file has 316 student-session rows for 194 students and nine variables. It has no demographics or prior-achievement covariates, and not every student has a row for both conditions.</li>
+          <li><strong>Different experiments.</strong> The PNAS study compares AI with no AI and tests students without AI; the Harvard study compares a tutor with an active-learning class using a short-term post-test. We will keep them separate and use their own scales.</li>
+          <li><strong>Pew data.</strong> We have found published tables, but not a public respondent-level file, so those charts will use topline percentages.</li>
+          <li><strong>HEPI trends.</strong> Earlier survey waves are needed for trends, and question wording may have changed between years.</li>
+          <li><strong>Self-report and measurement.</strong> Surveys record what students say; experiments record outcomes. Each chart will make this distinction clear.</li>
+        </ul>
+      </div>
     </section>
   </main>
+  <footer><div class="container footer-inner"><span>RUCOS · Project proposal</span><div><a href="first_submission.pdf">First submission ↗</a><a href="https://github.com/Faasol/DV-website">GitHub ↗</a><a href="#top">Back to top ↑</a></div></div></footer>
 </body>
 </html>
